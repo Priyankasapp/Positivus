@@ -287,10 +287,16 @@
   gap: 30px;
 }
 
-.active-process .accordion-button {
+/* OPEN ACCORDION BACKGROUND */
+.process-accordion .accordion-button:not(.collapsed) {
   background: #b9ff66;
+  color: #000;
 }
 
+/* BODY COLOR */
+.process-accordion .accordion-body {
+  background: #b9ff66;
+}
 .process-number {
   font-size: 60px;
   font-weight: 700;
@@ -350,11 +356,28 @@
 }
 
 .team-profile img {
-  width: 90px;
-  height: 90px;
+  width: 95px;
+  height: 95px;
   object-fit: cover;
+
+  /* REACT STYLE SHAPE */
+  border-radius: 50%;
+
+  background: #b9ff66;
+
+  padding: 6px;
+
+  mix-blend-mode: multiply;
+
+  filter: contrast(1.1);
+
+  transition: 0.4s ease;
 }
 
+/* HOVER */
+.team-card:hover .team-profile img {
+  transform: rotate(10deg) scale(1.08);
+}
 .team-profile h4 {
   font-size: 22px;
   font-weight: 700;
