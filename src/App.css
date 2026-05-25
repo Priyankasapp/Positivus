@@ -406,6 +406,97 @@
   background: #b9ff66;
   color: #000;
 }
+
+/* TESTIMONIAL SECTION */
+
+.testimonial-section {
+  padding: 100px 0;
+}
+
+.testimonial-box {
+  background: #191a23;
+  border-radius: 45px;
+  padding: 70px 60px;
+  overflow: hidden;
+}
+
+.testimonial-card {
+  color: white;
+}
+
+.testimonial-message {
+  border: 1px solid #b9ff66;
+  border-radius: 45px;
+  padding: 40px;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.testimonial-message::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 40px;
+  width: 25px;
+  height: 25px;
+  background: #191a23;
+  border-left: 1px solid #b9ff66;
+  border-bottom: 1px solid #b9ff66;
+  transform: rotate(-45deg);
+}
+
+.testimonial-message p {
+  line-height: 1.8;
+  margin: 0;
+}
+
+.testimonial-user {
+  padding-left: 30px;
+}
+
+.testimonial-user h4 {
+  color: #b9ff66;
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.testimonial-user span {
+  color: #fff;
+}
+
+.testimonial-navigation {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.testimonial-navigation button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+}
+
+.dots {
+  display: flex;
+  gap: 12px;
+}
+
+.dots span {
+  width: 14px;
+  height: 14px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.4;
+}
+
+.dots .active-dot {
+  background: #b9ff66;
+  opacity: 1;
+}
+
 /* RESPONSIVE */
 
 @media (max-width: 991px) {
@@ -493,6 +584,13 @@
 
   .team-card {
     padding: 30px;
+  }
+    .testimonial-box {
+    padding: 40px 25px;
+  }
+
+  .testimonial-message {
+    padding: 25px;
   }
 }
 

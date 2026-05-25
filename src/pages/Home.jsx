@@ -7,6 +7,8 @@ import Cta from '../components/Cta';
 import CaseStudies from '../components/CaseStudies';
 import Process from "../components/Process";
 import Team from "../components/Team"
+import Testimonials from "../components/Testimonials";
+
 const Home = () => {
   return (
    <>
@@ -18,6 +20,7 @@ const Home = () => {
    <CaseStudies/>
    <Process/>
    <Team/>
+   <Testimonials/>
    </>
   )
 }
