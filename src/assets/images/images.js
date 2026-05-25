@@ -19,6 +19,7 @@ import smmImage from "./photo4.png";
 import emImage from "./photo3.png";
 import ccImage from "./photo2.png";
 import aatImage from "./photo1.png";
+import ctaImage from "./photo8.png"
 
 export {
   logo,
@@ -34,5 +35,6 @@ export {
   smmImage,
   emImage,
   ccImage,
-  aatImage
+  aatImage,
+  ctaImage
 };
