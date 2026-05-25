@@ -47,7 +47,26 @@
 .hero-img {
   max-width: 100%;
 }
+ /* brands  */
+.brands-section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
+.brand-logo {
+  max-width: 120px;
+  width: 100%;
+  object-fit: contain;
+  opacity: 0.7;
+  transition: 0.3s;
+  filter: grayscale(100%);
+}
+
+.brand-logo:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
 /* RESPONSIVE */
 @media (max-width: 991px) {
   .hero-title {
