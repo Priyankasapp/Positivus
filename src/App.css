@@ -253,7 +253,7 @@
 .case-item button {
   border: none;
   background: transparent;
-  color: #b9ff66;
+  color:#b9ff66;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -262,6 +262,149 @@
 
 .case-item button i {
   font-size: 20px;
+}
+
+/* PROCESS SECTION */
+
+.process-section {
+  padding: 100px 0;
+}
+
+.process-item {
+  border: 1px solid #191a23 !important;
+  border-radius: 45px !important;
+  overflow: hidden;
+  margin-bottom: 30px;
+  box-shadow: 0px 5px 0px #191a23;
+}
+
+.process-item .accordion-button {
+  background: #f3f3f3;
+  padding: 40px;
+  box-shadow: none !important;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.active-process .accordion-button {
+  background: #b9ff66;
+}
+
+.process-number {
+  font-size: 60px;
+  font-weight: 700;
+  color: #000;
+}
+
+.process-title {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.accordion-body {
+  background: #b9ff66;
+  padding: 0 40px 40px 40px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.accordion-button::after {
+  background-size: 22px;
+}
+
+.process-accordion .accordion-button:not(.collapsed) {
+  color: #000;
+}
+
+/* TEAM SECTION */
+
+.team-section {
+  padding: 100px 0;
+}
+
+.team-card {
+  border: 1px solid #191a23;
+  border-radius: 45px;
+  padding: 40px;
+  box-shadow: 0px 5px 0px #191a23;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.team-profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.team-profile img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+}
+
+.team-profile h4 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.team-profile p {
+  color: #555;
+  margin: 0;
+}
+
+.linkedin-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: #191a23;
+  color: #b9ff66;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.team-card hr {
+  margin: 30px 0;
+  opacity: 0.2;
+}
+
+.team-text {
+  color: #555;
+  line-height: 1.7;
+}
+
+.team-btn-wrapper {
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.team-btn {
+  background: #191a23;
+  color: white;
+  border: none;
+  padding: 18px 40px;
+  border-radius: 14px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.team-btn:hover {
+  background: #b9ff66;
+  color: #000;
 }
 /* RESPONSIVE */
 
@@ -329,5 +472,27 @@
     padding-bottom: 30px;
     padding-right: 0;
   }
-  
+  .process-number {
+    font-size: 36px;
+  }
+
+  .process-title {
+    font-size: 20px;
+  }
+
+  .process-item .accordion-button {
+    padding: 25px;
+  }
+
+  .accordion-body {
+    padding: 0 25px 25px;
+  }
+  .team-btn-wrapper {
+    justify-content: center;
+  }
+
+  .team-card {
+    padding: 30px;
+  }
 }
+

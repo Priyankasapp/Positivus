@@ -1,10 +1,12 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
-import Hero from '../components/Hero'
-import Brands from '../components/Brands'
-import Services from '../components/Services'
-import Cta from '../components/Cta'
-import CaseStudies from '../components/CaseStudies'
+import React from 'react';
+import Navbar from '../components/Navbar';
+import Hero from '../components/Hero';
+import Brands from '../components/Brands';
+import Services from '../components/Services';
+import Cta from '../components/Cta';
+import CaseStudies from '../components/CaseStudies';
+import Process from "../components/Process";
+import Team from "../components/Team"
 const Home = () => {
   return (
    <>
@@ -14,6 +16,8 @@ const Home = () => {
    <Services/>
    <Cta/>
    <CaseStudies/>
+   <Process/>
+   <Team/>
    </>
   )
 }

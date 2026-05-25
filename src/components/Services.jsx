@@ -34,7 +34,7 @@ const Services = () => {
                   <button className="learn-btn">
                     <i
                       className="bi bi-arrow-up-right"
-                      style={{ color: "#b9ff66;" }}
+                      style={{ color: "#b9ff66" }}
                     ></i>
                     Learn more
                   </button>
@@ -70,7 +70,7 @@ const Services = () => {
             <div className="col-lg-6">
               <div className="service-card black-card">
                 <div className="service-content">
-                  <h3 style={{ background: " #f3f3f3;" }}>
+                  <h3 style={{ background: " #f3f3f3" }}>
                     {" "}
                     Social Media Marketing
                   </h3>

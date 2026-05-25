@@ -19,7 +19,14 @@ import smmImage from "./photo4.png";
 import emImage from "./photo3.png";
 import ccImage from "./photo2.png";
 import aatImage from "./photo1.png";
-import ctaImage from "./photo8.png"
+import ctaImage from "./photo8.png";
+
+import team1 from "./Avtar1.png";
+import team2 from "./Avtar2.png";
+import team3 from "./Avtar3.png";
+import team4 from "./Avtar4.png";
+import team5 from "./Avtar5.png";
+import team6 from "./Avtar6.png";
 
 export {
   logo,
@@ -36,5 +43,11 @@ export {
   emImage,
   ccImage,
   aatImage,
-  ctaImage
+  ctaImage,
+  team1,
+  team2,
+  team3,
+  team4,
+  team5,
+  team6
 };
