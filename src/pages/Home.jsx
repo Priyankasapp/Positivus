@@ -8,7 +8,8 @@ import CaseStudies from '../components/CaseStudies';
 import Process from "../components/Process";
 import Team from "../components/Team"
 import Testimonials from "../components/Testimonials";
-
+import Contact from '../components/Contact';
+import Footer from '../components/Footer';
 const Home = () => {
   return (
    <>
@@ -21,6 +22,8 @@ const Home = () => {
    <Process/>
    <Team/>
    <Testimonials/>
+   <Contact/>
+   <Footer/>
    </>
   )
 }

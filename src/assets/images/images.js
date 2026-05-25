@@ -1,6 +1,6 @@
 //LOGO
 import logo from "./Icon.png";
-
+import logo2 from "./Vector (1).png"
 //HERO
 import heroIllustration from "./hero-illustration.png";
 
@@ -49,5 +49,6 @@ export {
   team3,
   team4,
   team5,
-  team6
+  team6,
+  logo2
 };
