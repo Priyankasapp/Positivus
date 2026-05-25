@@ -4,7 +4,7 @@ import Hero from '../components/Hero'
 import Brands from '../components/Brands'
 import Services from '../components/Services'
 import Cta from '../components/Cta'
-
+import CaseStudies from '../components/CaseStudies'
 const Home = () => {
   return (
    <>
@@ -13,6 +13,7 @@ const Home = () => {
    <Brands/>
    <Services/>
    <Cta/>
+   <CaseStudies/>
    </>
   )
 }
