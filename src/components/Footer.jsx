@@ -1,11 +1,11 @@
 import React from "react";
 import "../App.css";
 
-import {  logo2 } from "../assets/images/images";
+import { logo2 } from "../assets/images/images";
 
 const Footer = () => {
   return (
-    <footer className="footer-section">
+    <footer className="footer-section" data-aos="fade-up">
 
       <div className="container">
 
@@ -15,31 +15,37 @@ const Footer = () => {
           <div className="footer-top">
 
             {/* LOGO */}
-            <div className="footer-logo">
-
+            <div
+              className="footer-logo"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
               <img src={logo2} alt="Positivus Logo" />
 
               <h2 className="footer-title">
                 Positivus
               </h2>
-
-
             </div>
 
-              {/* NAVIGATION */}
-              
-            <ul className="footer-links">
-
+            {/* NAVIGATION */}
+            <ul
+              className="footer-links"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <li>About us</li>
               <li>Services</li>
               <li>Use Cases</li>
               <li>Pricing</li>
               <li>Blog</li>
-
             </ul>
 
             {/* SOCIAL */}
-            <div className="footer-social">
+            <div
+              className="footer-social"
+              data-aos="fade-left"
+              data-aos-delay="300"
+            >
 
               <button>
                 <i className="bi bi-linkedin"></i>
@@ -61,7 +67,11 @@ const Footer = () => {
           <div className="footer-middle">
 
             {/* CONTACT */}
-            <div className="footer-contact">
+            <div
+              className="footer-contact"
+              data-aos="fade-right"
+              data-aos-delay="400"
+            >
 
               <h4>Contact us:</h4>
 
@@ -77,7 +87,11 @@ const Footer = () => {
             </div>
 
             {/* SUBSCRIBE */}
-            <div className="footer-subscribe">
+            <div
+              className="footer-subscribe"
+              data-aos="fade-left"
+              data-aos-delay="500"
+            >
 
               <input
                 type="email"
@@ -92,10 +106,14 @@ const Footer = () => {
 
           </div>
 
-          <hr />
+          <hr data-aos="zoom-in" data-aos-delay="600" />
 
           {/* BOTTOM */}
-          <div className="footer-bottom">
+          <div
+            className="footer-bottom"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
 
             <p>
               © 2026 Positivus. All Rights Reserved.
