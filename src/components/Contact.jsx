@@ -5,12 +5,18 @@ import "../App.css";
 
 const Contact = () => {
   return (
-    <section className="contact-section">
+    <section
+      className="contact-section"
+      data-aos="fade-up"
+    >
 
       <div className="container">
 
         {/* HEADING */}
-        <div className="services-heading">
+        <div
+          className="services-heading"
+          data-aos="fade-down"
+        >
 
           <h2>Contact Us</h2>
 
@@ -24,7 +30,11 @@ const Contact = () => {
         <div className="contact-box">
 
           {/* FORM */}
-          <div className="contact-form">
+          <div
+            className="contact-form"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
 
             {/* RADIO */}
             <div className="contact-radio">
@@ -42,7 +52,11 @@ const Contact = () => {
             </div>
 
             {/* INPUT */}
-            <div className="form-group">
+            <div
+              className="form-group"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
 
               <label>Name</label>
 
@@ -54,7 +68,11 @@ const Contact = () => {
             </div>
 
             {/* INPUT */}
-            <div className="form-group">
+            <div
+              className="form-group"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
 
               <label>Email*</label>
 
@@ -66,7 +84,11 @@ const Contact = () => {
             </div>
 
             {/* TEXTAREA */}
-            <div className="form-group">
+            <div
+              className="form-group"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
 
               <label>Message*</label>
 
@@ -78,19 +100,29 @@ const Contact = () => {
             </div>
 
             {/* BUTTON */}
-            <button className="contact-btn">
+            <button
+              className="contact-btn"
+              data-aos="zoom-in"
+              data-aos-delay="600"
+            >
               Send Message
             </button>
 
           </div>
 
           {/* IMAGE */}
-          <div className="contact-image">
-{/* 
+          <div
+            className="contact-image"
+            data-aos="fade-left"
+            data-aos-delay="400"
+          >
+
+            {/*
             <img
               src={contactImage}
               alt=""
-            /> */}
+            />
+            */}
 
           </div>
 
