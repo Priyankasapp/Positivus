@@ -3,12 +3,18 @@ import "../App.css";
 
 const CaseStudies = () => {
   return (
-    <section className="case-section">
+    <section
+      className="case-section"
+      data-aos="fade-up"
+    >
 
       <div className="container">
 
         {/* HEADING */}
-        <div className="services-heading">
+        <div
+          className="services-heading"
+          data-aos="fade-down"
+        >
 
           <h2>Case Studies</h2>
 
@@ -23,7 +29,11 @@ const CaseStudies = () => {
         <div className="case-box">
 
           {/* ITEM 1 */}
-          <div className="case-item">
+          <div
+            className="case-item"
+            data-aos="fade-right"
+            data-aos-delay="100"
+          >
 
             <p>
               For a local restaurant, we implemented a targeted PPC
@@ -39,7 +49,11 @@ const CaseStudies = () => {
           </div>
 
           {/* ITEM 2 */}
-          <div className="case-item">
+          <div
+            className="case-item"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
 
             <p>
               For a B2B software company, we developed an SEO strategy
@@ -55,7 +69,11 @@ const CaseStudies = () => {
           </div>
 
           {/* ITEM 3 */}
-          <div className="case-item border-0">
+          <div
+            className="case-item border-0"
+            data-aos="fade-left"
+            data-aos-delay="500"
+          >
 
             <p>
               For a national retail chain, we created a social media
