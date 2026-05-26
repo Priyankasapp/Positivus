@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card UI</title>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap");
+
+    :root {
+      --bg: #f4f2ed;
+      --card: #fbfaf7;
+      --ink: #15161d;
+      --accent: #b8ff4f;
+      --border: #1a1c24;
+      --shadow-offset: 12px;
+      --radius: 56px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 28px;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Space Grotesk", "Avenir Next", "Helvetica Neue", sans-serif;
+    }
+
+    .profile-card {
+      position: relative;
+      width: min(100%, 790px);
+      border: 2.5px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--card);
+      padding: 52px 68px 60px;
+      box-shadow: 0 var(--shadow-offset) 0 0 var(--border);
+      overflow: hidden;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 38px;
+    }
+
+    .avatar-shell {
+      position: relative;
+      width: 205px;
+      flex: 0 0 205px;
+      aspect-ratio: 1;
+    }
+
+    .avatar-svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+      overflow: visible;
+    }
+
+    .header-copy {
+      display: flex;
+      flex: 1;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 26px;
+      padding-top: 10px;
+    }
+
+    .identity {
+      padding-top: 88px;
+    }
+
+    .identity h1 {
+      font-size: clamp(2rem, 2.85vw, 3.45rem);
+      line-height: 0.96;
+      font-weight: 600;
+      letter-spacing: -0.06em;
+      margin-bottom: 8px;
+    }
+
+    .identity p {
+      font-size: clamp(1.68rem, 2.35vw, 2.8rem);
+      line-height: 1.01;
+      letter-spacing: -0.05em;
+      font-weight: 400;
+    }
+
+    .social-link {
+      display: inline-grid;
+      place-items: center;
+      width: 60px;
+      height: 60px;
+      flex: 0 0 60px;
+      border-radius: 50%;
+      background: #000000;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 2.45rem;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.1em;
+      transition: transform 160ms ease, box-shadow 160ms ease;
+      margin-top: 6px;
+    }
+
+    .social-link:hover,
+    .social-link:focus-visible {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(16, 17, 21, 0.18);
+      outline: none;
+    }
+
+    .divider {
+      margin: 34px 0 48px;
+      height: 2.5px;
+      border: 0;
+      background: rgba(21, 22, 29, 0.96);
+    }
+
+    .summary {
+      max-width: 620px;
+      font-size: clamp(1.75rem, 2.58vw, 3.08rem);
+      line-height: 1.19;
+      letter-spacing: -0.05em;
+      text-wrap: pretty;
+    }
+
+    .profile-card,
+    .avatar-shell,
+    .identity,
+    .summary {
+      animation: rise-in 680ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+    }
+
+    .avatar-shell {
+      animation-delay: 80ms;
+    }
+
+    .identity {
+      animation-delay: 150ms;
+    }
+
+    .summary {
+      animation-delay: 220ms;
+    }
+
+    @keyframes rise-in {
+      from {
+        opacity: 0;
+        transform: translateY(22px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 760px) {
+      .profile-card {
+        padding: 34px 24px 38px;
+        border-radius: 38px;
+      }
+
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 22px;
+      }
+
+      .avatar-shell {
+        width: min(54vw, 205px);
+        flex-basis: auto;
+      }
+
+      .header-copy {
+        width: 100%;
+        padding-top: 0;
+        gap: 16px;
+      }
+
+      .identity {
+        padding-top: 0;
+      }
+
+      .social-link {
+        width: 58px;
+        height: 58px;
+        font-size: 2.35rem;
+      }
+
+      .divider {
+        margin: 28px 0 30px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      body {
+        padding: 18px;
+      }
+
+      .header-copy {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+      }
+
+      .summary {
+        text-wrap: pretty;
+      }
+    }
+  </style>
+</head>
+<body>
+  <article class="profile-card">
+    <div class="header">
+      <div class="avatar-shell">
+        <svg class="avatar-svg" viewBox="0 0 224 224" role="img" aria-label="Portrait of Michael Brown">
+          <defs>
+            <clipPath id="avatar-clip" clipPathUnits="userSpaceOnUse">
+              <circle cx="68" cy="68" r="54" />
+              <circle cx="156" cy="68" r="54" />
+              <circle cx="68" cy="156" r="54" />
+              <circle cx="156" cy="156" r="54" />
+            </clipPath>
+          </defs>
+
+          <g transform="translate(13 14)" fill="#1a1c24">
+            <circle cx="68" cy="68" r="54" />
+            <circle cx="156" cy="68" r="54" />
+            <circle cx="68" cy="156" r="54" />
+            <circle cx="156" cy="156" r="54" />
+          </g>
+
+          <g fill="#b7ff4a">
+            <circle cx="68" cy="68" r="54" />
+            <circle cx="156" cy="68" r="54" />
+            <circle cx="68" cy="156" r="54" />
+            <circle cx="156" cy="156" r="54" />
+          </g>
+
+          <image
+            href="https://images.unsplash.com/photo-1568604032475-10f1a56527c9?auto=format&fit=crop&w=900&q=80"
+            x="14"
+            y="14"
+            width="196"
+            height="196"
+            preserveAspectRatio="xMidYMid slice"
+            clip-path="url(#avatar-clip)"
+            style="filter: grayscale(100%) contrast(1.22) brightness(0.72) sepia(100%) hue-rotate(34deg) saturate(760%);"
+          />
+
+          <rect x="14" y="14" width="196" height="196" fill="#b7ff4a" opacity="0.22" clip-path="url(#avatar-clip)" />
+        </svg>
+      </div>
+
+      <div class="header-copy">
+        <div class="identity">
+          <h1>Michael Brown</h1>
+          <p>Senior SEO Specialist</p>
+        </div>
+
+        <a
+          class="social-link"
+          href="https://www.linkedin.com/"
+          aria-label="LinkedIn profile"
+          target="_blank"
+          rel="noreferrer"
+        >
+          in
+        </a>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <p class="summary">
+      5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization
+    </p>
+  </article>
+</body>
+</html>

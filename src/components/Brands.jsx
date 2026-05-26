@@ -12,36 +12,30 @@ import {
 function Brands() {
   return (
     <section className="brands-section py-5">
-      <div className="container">
 
-        <div className="row justify-content-center align-items-center gy-4">
+      <div className="brands-slider">
 
-          <div className="col-6 col-md-4 col-lg text-center">
-            <img src={amazonLogo} alt="Amazon" className="brand-logo" />
-          </div>
+        <div className="brands-track">
 
-          <div className="col-6 col-md-4 col-lg text-center">
-            <img src={dribbbleLogo} alt="Dribbble" className="brand-logo" />
-          </div>
+          {/* FIRST SET */}
+          <img src={amazonLogo} alt="Amazon" className="brand-logo" />
+          <img src={dribbbleLogo} alt="Dribbble" className="brand-logo" />
+          <img src={hubspotLogo} alt="Hubspot" className="brand-logo" />
+          <img src={notionLogo} alt="Notion" className="brand-logo" />
+          <img src={netflixLogo} alt="Netflix" className="brand-logo" />
+          <img src={zoomLogo} alt="Zoom" className="brand-logo" />
 
-          <div className="col-6 col-md-4 col-lg text-center">
-            <img src={hubspotLogo} alt="Hubspot" className="brand-logo" />
-          </div>
-
-          <div className="col-6 col-md-4 col-lg text-center">
-            <img src={notionLogo} alt="Notion" className="brand-logo" />
-          </div>
-
-          <div className="col-6 col-md-4 col-lg text-center">
-            <img src={netflixLogo} alt="Netflix" className="brand-logo" />
-          </div>
-
-          <div className="col-6 col-md-4 col-lg text-center">
-            <img src={zoomLogo} alt="Zoom" className="brand-logo" />
-          </div>
+          {/* DUPLICATE SET FOR SMOOTH LOOP */}
+          <img src={amazonLogo} alt="Amazon" className="brand-logo" />
+          <img src={dribbbleLogo} alt="Dribbble" className="brand-logo" />
+          <img src={hubspotLogo} alt="Hubspot" className="brand-logo" />
+          <img src={notionLogo} alt="Notion" className="brand-logo" />
+          <img src={netflixLogo} alt="Netflix" className="brand-logo" />
+          <img src={zoomLogo} alt="Zoom" className="brand-logo" />
 
         </div>
       </div>
+
     </section>
   );
 }

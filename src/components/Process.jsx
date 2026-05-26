@@ -11,7 +11,7 @@ const Process = () => {
           <h2>Our Working Process</h2>
 
           <p>
-            Step-by-Step Guide to Achieving <br /> Your Business Goals.
+            Step-by-Step Guide to Achieving <br/> Your Business Goals.
           </p>
         </div>
 

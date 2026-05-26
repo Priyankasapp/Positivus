@@ -1,12 +1,12 @@
 import React from 'react'
-import {team1, team2, team3, team4,team5, team6} from "../assets/images/images"
+import {team1, team2, team3, team4,team5, team6, team7} from "../assets/images/images"
 
 
 const Team = () => {
 
   const members = [
     {
-      image: team4,
+      image: team1,
       name: "John Smith",
       role: "CEO and Founder",
       text: "10+ years of experience in digital marketing.",
@@ -20,14 +20,14 @@ const Team = () => {
     },
 
     {
-      image: team6,
+      image: team4,
       name: "Michael Brown",
       role: "Senior SEO Specialist",
       text: "5+ years of experience in SEO and analytics.",
     },
 
     {
-      image: team1,
+      image: team7,
       name: "Emily Johnson",
       role: "PPC Manager",
       text: "Expert in paid advertising and campaign growth.",
@@ -79,8 +79,21 @@ const Team = () => {
                 <div className="team-top">
 
                   <div className="team-profile">
-
-                    <img src={member.image} alt="" />
+                  {/* FLOWER BACKGROUND BEHIND IMAGE */}
+<div className="flower-wrapper">
+  <div className="flower">
+    {/* <div className="petal petal1"></div> */}
+    <div className="petal petal2"></div>
+    {/* <div className="petal petal3"></div> */}
+    <div className="petal petal4"></div>
+    {/* <div className="petal petal5"></div> */}
+    <div className="petal petal6"></div>
+    {/* <div className="petal petal7"></div> */}
+    <div className="petal petal8"></div>
+    <div className="center"></div>
+  </div>
+  <img src={member.image} alt={member.name} className="team-img" />
+</div>
 
                     <div>
                       <h4>{member.name}</h4>

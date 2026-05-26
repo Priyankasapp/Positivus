@@ -17,13 +17,17 @@ const Footer = () => {
             {/* LOGO */}
             <div className="footer-logo">
 
-              <img src={logo2} alt="" />
+              <img src={logo2} alt="Positivus Logo" />
 
-              <h3>Positivus</h3>
+              <h2 className="footer-title">
+                Positivus
+              </h2>
+
 
             </div>
 
-            {/* LINKS */}
+              {/* NAVIGATION */}
+              
             <ul className="footer-links">
 
               <li>About us</li>

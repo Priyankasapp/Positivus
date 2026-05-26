@@ -27,6 +27,7 @@ import team3 from "./Avtar3.png";
 import team4 from "./Avtar4.png";
 import team5 from "./Avtar5.png";
 import team6 from "./Avtar6.png";
+import team7 from "./Avtar.png"
 
 export {
   logo,
@@ -50,5 +51,6 @@ export {
   team4,
   team5,
   team6,
-  logo2
+  logo2,
+  team7
 };
