@@ -27,54 +27,62 @@ const Testimonials = () => {
     <section
       className="testimonial-section"
       data-aos="fade-up"
+      aria-labelledby="testimonial-heading"
     >
 
       <div className="container">
 
         {/* HEADING */}
-        <div
+        <header
           className="services-heading"
           data-aos="fade-down"
         >
 
-          <h2>Testimonials</h2>
+          <h2 id="testimonial-heading">
+            Testimonials
+          </h2>
 
           <p>
             Hear from Our Satisfied Clients: Read Our Testimonials to
             Learn More about Our Digital Marketing Services.
           </p>
 
-        </div>
+        </header>
 
         {/* TESTIMONIAL BOX */}
         <div className="testimonial-box">
 
-          <div className="row g-4">
+          <div
+            className="row g-4"
+            role="list"
+            aria-label="Client testimonials"
+          >
 
             {testimonials.map((item, index) => (
 
-              <div
+              <article
                 className="col-lg-4"
                 key={index}
                 data-aos="zoom-in-up"
                 data-aos-delay={index * 200}
+                role="listitem"
               >
 
                 <div className="testimonial-card">
 
                   {/* MESSAGE */}
-                  <div className="testimonial-message">
+                  <blockquote className="testimonial-message">
 
                     <p>
-                      "{item.text}"
+                      “{item.text}”
                     </p>
 
-                  </div>
+                  </blockquote>
 
                   {/* USER */}
                   <div className="testimonial-user">
 
-                    <h4>{item.name}</h4>
+                    <h3>{item.name}</h3>
 
                     <span>{item.role}</span>
 
@@ -82,38 +90,88 @@ const Testimonials = () => {
 
                 </div>
 
-              </div>
+              </article>
 
             ))}
 
           </div>
 
           {/* NAVIGATION */}
-          <div
+          <nav
             className="testimonial-navigation"
             data-aos="fade-up"
             data-aos-delay="700"
+            aria-label="Testimonials navigation"
           >
 
-            <button>
-              <i className="bi bi-arrow-left"></i>
+            {/* PREVIOUS */}
+            <button
+              type="button"
+              aria-label="View previous testimonial"
+            >
+              <i
+                className="bi bi-arrow-left"
+                aria-hidden="true"
+              ></i>
             </button>
 
-            <div className="dots">
+            {/* DOTS */}
+            <div
+              className="dots"
+              role="tablist"
+              aria-label="Testimonial slides"
+            >
 
-              <span className="active-dot"></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
+              <button
+                className="active-dot"
+                aria-label="Go to testimonial 1"
+                aria-selected="true"
+                role="tab"
+                type="button"
+              ></button>
+
+              <button
+                aria-label="Go to testimonial 2"
+                aria-selected="false"
+                role="tab"
+                type="button"
+              ></button>
+
+              <button
+                aria-label="Go to testimonial 3"
+                aria-selected="false"
+                role="tab"
+                type="button"
+              ></button>
+
+              <button
+                aria-label="Go to testimonial 4"
+                aria-selected="false"
+                role="tab"
+                type="button"
+              ></button>
+
+              <button
+                aria-label="Go to testimonial 5"
+                aria-selected="false"
+                role="tab"
+                type="button"
+              ></button>
 
             </div>
 
-            <button>
-              <i className="bi bi-arrow-right"></i>
+            {/* NEXT */}
+            <button
+              type="button"
+              aria-label="View next testimonial"
+            >
+              <i
+                className="bi bi-arrow-right"
+                aria-hidden="true"
+              ></i>
             </button>
 
-          </div>
+          </nav>
 
         </div>
 

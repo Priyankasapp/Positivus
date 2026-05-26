@@ -173,7 +173,7 @@
 .cta-box {
   background: #f3f3f3;
   border-radius: 45px;
-  padding: 60px;
+  padding: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -641,28 +641,29 @@
 /* FOOTER */
 
 .footer-section {
-  padding-top: 100px;
-}
-
-.footer-box {
+ padding: 60px 20px;
   background: #191a23;
-  border-radius: 45px 45px 0 0;
-  padding: 60px;
   color: white;
 }
 
+.footer-box {
+   background: #191a23;
+  border-radius: 40px 40px 0 0;
+}
+
 .footer-top {
-  display: flex;
+    display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 30px;
   flex-wrap: wrap;
+  padding-bottom: 40px;
 }
 
 .footer-logo {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 
 .footer-logo img {
@@ -673,7 +674,10 @@
   margin: 0;
   font-size: 30px;
 }
-
+.footer-title {
+  font-size: 28px;
+  margin: 0;
+}
 .footer-links {
   display: flex;
   gap: 30px;

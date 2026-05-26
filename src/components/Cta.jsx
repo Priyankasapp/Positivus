@@ -1,6 +1,6 @@
 import React from 'react'
 import "../App.css";
-import { ctaImage } from "../assets/images/images"
+import { ctaImage,vector  } from "../assets/images/images"
 
 const Cta = () => {
   return (
@@ -49,7 +49,7 @@ const Cta = () => {
           >
 
             <img
-              src={ctaImage}
+              src={vector}
               alt="CTA Illustration"
             />
 

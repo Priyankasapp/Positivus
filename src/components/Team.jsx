@@ -55,33 +55,52 @@ const Team = () => {
   ];
 
   return (
-    <section className="team-section" data-aos="fade-up">
+    <section
+      className="team-section"
+      data-aos="fade-up"
+      aria-labelledby="team-heading"
+    >
       <div className="container">
+
         {/* HEADING */}
-        <div className="services-heading" data-aos="fade-down">
-          <h2>Team</h2>
+        <header
+          className="services-heading"
+          data-aos="fade-down"
+        >
+          <h2 id="team-heading">Team</h2>
 
           <p>
-            Meet the skilled and experienced team behind our successful digital
-            marketing strategies.
+            Meet the skilled and experienced team behind our successful
+            digital marketing strategies.
           </p>
-        </div>
+        </header>
 
         {/* TEAM GRID */}
-        <div className="row g-4">
+        <div
+          className="row g-4"
+          role="list"
+          aria-label="Team members"
+        >
           {members.map((member, index) => (
-            <div
+            <article
               className="col-lg-4 col-md-6"
               key={index}
               data-aos="zoom-in-up"
               data-aos-delay={index * 150}
+              role="listitem"
             >
               <div className="team-card">
+
                 {/* TOP */}
                 <div className="team-top">
+
                   <div className="team-profile">
+
                     {/* FLOWER BACKGROUND */}
-                    <div className="flower-wrapper">
+                    <div
+                      className="flower-wrapper"
+                      aria-hidden="true"
+                    >
                       <div className="flower">
                         <div className="petal petal2"></div>
                         <div className="petal petal4"></div>
@@ -90,36 +109,50 @@ const Team = () => {
 
                         <div className="center"></div>
                       </div>
-
-                      <img
-                        src={member.image}
-                        alt={member.name}
-                        className="team-img"
-                      />
                     </div>
 
+                    {/* IMAGE */}
+                    <img
+                      src={member.image}
+                      alt={`${member.name}, ${member.role}`}
+                      className="team-img"
+                      loading="lazy"
+                    />
+
+                    {/* INFO */}
                     <div>
-                      <h4>{member.name}</h4>
+                      <h3>{member.name}</h3>
 
                       <p>{member.role}</p>
                     </div>
+
                   </div>
 
+                  {/* LINKEDIN BUTTON */}
                   <button
                     className="linkedin-btn"
                     data-aos="zoom-in"
                     data-aos-delay="300"
+                    aria-label={`Visit ${member.name}'s LinkedIn profile`}
+                    type="button"
                   >
-                    <i className="bi bi-linkedin"></i>
+                    <i
+                      className="bi bi-linkedin"
+                      aria-hidden="true"
+                    ></i>
                   </button>
+
                 </div>
 
                 <hr />
 
                 {/* TEXT */}
-                <p className="team-text">{member.text}</p>
+                <p className="team-text">
+                  {member.text}
+                </p>
+
               </div>
-            </div>
+            </article>
           ))}
         </div>
 
@@ -129,8 +162,15 @@ const Team = () => {
           data-aos="fade-up"
           data-aos-delay="800"
         >
-          <button className="team-btn">See all team</button>
+          <button
+            className="team-btn"
+            type="button"
+            aria-label="View all team members"
+          >
+            See all team
+          </button>
         </div>
+
       </div>
     </section>
   );

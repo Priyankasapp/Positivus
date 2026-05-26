@@ -5,7 +5,11 @@ import { logo2 } from "../assets/images/images";
 
 const Footer = () => {
   return (
-    <footer className="footer-section" data-aos="fade-up">
+    <footer
+      className="footer-section"
+      data-aos="fade-up"
+      aria-labelledby="footer-heading"
+    >
 
       <div className="container">
 
@@ -20,44 +24,104 @@ const Footer = () => {
               data-aos="zoom-in"
               data-aos-delay="100"
             >
-              <img src={logo2} alt="Positivus Logo" />
 
-              <h2 className="footer-title">
+              <img
+                src={logo2}
+                alt="Positivus company logo"
+              />
+
+              <h2
+                className="footer-title"
+                id="footer-heading"
+              >
                 Positivus
               </h2>
+
             </div>
 
             {/* NAVIGATION */}
-            <ul
-              className="footer-links"
+            <nav
+              aria-label="Footer navigation"
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              <li>About us</li>
-              <li>Services</li>
-              <li>Use Cases</li>
-              <li>Pricing</li>
-              <li>Blog</li>
-            </ul>
+
+              <ul className="footer-links">
+
+                <li>
+                  <a href="#about">
+                    About us
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#services">
+                    Services
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#use-cases">
+                    Use Cases
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#pricing">
+                    Pricing
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#blog">
+                    Blog
+                  </a>
+                </li>
+
+              </ul>
+
+            </nav>
 
             {/* SOCIAL */}
             <div
               className="footer-social"
               data-aos="fade-left"
               data-aos-delay="300"
+              aria-label="Social media links"
             >
 
-              <button>
-                <i className="bi bi-linkedin"></i>
-              </button>
+              <a
+                href="/"
+                aria-label="Visit our LinkedIn page"
+                className="social-btn"
+              >
+                <i
+                  className="bi bi-linkedin"
+                  aria-hidden="true"
+                ></i>
+              </a>
 
-              <button>
-                <i className="bi bi-facebook"></i>
-              </button>
+              <a
+                href="/"
+                aria-label="Visit our Facebook page"
+                className="social-btn"
+              >
+                <i
+                  className="bi bi-facebook"
+                  aria-hidden="true"
+                ></i>
+              </a>
 
-              <button>
-                <i className="bi bi-twitter-x"></i>
-              </button>
+              <a
+                href="/"
+                aria-label="Visit our Twitter page"
+                className="social-btn"
+              >
+                <i
+                  className="bi bi-twitter-x"
+                  aria-hidden="true"
+                ></i>
+              </a>
 
             </div>
 
@@ -67,46 +131,73 @@ const Footer = () => {
           <div className="footer-middle">
 
             {/* CONTACT */}
-            <div
+            <address
               className="footer-contact"
               data-aos="fade-right"
               data-aos-delay="400"
             >
 
-              <h4>Contact us:</h4>
+              <h3>Contact us:</h3>
 
-              <p>Email: info@positivus.com</p>
+              <p>
+                Email:
+                <a href="mailto:info@positivus.com">
+                  info@positivus.com
+                </a>
+              </p>
 
-              <p>Phone: 555-567-8901</p>
+              <p>
+                Phone:
+                <a href="tel:5555678901">
+                  555-567-8901
+                </a>
+              </p>
 
               <p>
                 Address: 1234 Main St <br />
                 Moonstone City, Stardust State 12345
               </p>
 
-            </div>
+            </address>
 
             {/* SUBSCRIBE */}
-            <div
+            <form
               className="footer-subscribe"
               data-aos="fade-left"
               data-aos-delay="500"
             >
 
+              <label
+                htmlFor="subscribe-email"
+                className="visually-hidden"
+              >
+                Enter your email
+              </label>
+
               <input
+                id="subscribe-email"
                 type="email"
                 placeholder="Email"
+                autoComplete="email"
+                required
+                aria-required="true"
               />
 
-              <button>
+              <button
+                type="submit"
+                aria-label="Subscribe to newsletter"
+              >
                 Subscribe to news
               </button>
 
-            </div>
+            </form>
 
           </div>
 
-          <hr data-aos="zoom-in" data-aos-delay="600" />
+          <hr
+            data-aos="zoom-in"
+            data-aos-delay="600"
+          />
 
           {/* BOTTOM */}
           <div
@@ -119,9 +210,9 @@ const Footer = () => {
               © 2026 Positivus. All Rights Reserved.
             </p>
 
-            <span>
+            <a href="/privacy-policy">
               Privacy Policy
-            </span>
+            </a>
 
           </div>
 
