@@ -24,12 +24,18 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="testimonial-section">
+    <section
+      className="testimonial-section"
+      data-aos="fade-up"
+    >
 
       <div className="container">
 
         {/* HEADING */}
-        <div className="services-heading">
+        <div
+          className="services-heading"
+          data-aos="fade-down"
+        >
 
           <h2>Testimonials</h2>
 
@@ -47,7 +53,12 @@ const Testimonials = () => {
 
             {testimonials.map((item, index) => (
 
-              <div className="col-lg-4" key={index}>
+              <div
+                className="col-lg-4"
+                key={index}
+                data-aos="zoom-in-up"
+                data-aos-delay={index * 200}
+              >
 
                 <div className="testimonial-card">
 
@@ -78,7 +89,11 @@ const Testimonials = () => {
           </div>
 
           {/* NAVIGATION */}
-          <div className="testimonial-navigation">
+          <div
+            className="testimonial-navigation"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
 
             <button>
               <i className="bi bi-arrow-left"></i>
