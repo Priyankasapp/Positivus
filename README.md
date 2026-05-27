@@ -8,8 +8,6 @@ A modern and responsive digital marketing website built with React.js and Bootst
 - Modern UI/UX
 - React Component Architecture
 - Bootstrap 5 Layout
-- GSAP Animations
-- AOS Scroll Animations
 - Accessible Components
 - Clean Folder Structure
 
@@ -46,7 +44,7 @@ src/
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/positivus-react.git
+git clone https://github.com/your-username/positivus.git
 ```
 
 Navigate to project folder:
@@ -71,7 +69,7 @@ npm run dev
 
 ## 🌐 Live Demo
 
-Add your deployed project link here.
+https://possitivus.netlify.app
 
 ## ♿ Accessibility Improvements
 
