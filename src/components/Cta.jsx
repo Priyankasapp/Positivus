@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "../App.css";
 import ScrollReveal from "scrollreveal";
 
-import { ctaImage } from "../assets/images/images";
+import { ctaImage, frame } from "../assets/images/images";
 
 const Cta = () => {
 
@@ -54,7 +54,7 @@ const Cta = () => {
           <div className="cta-image">
 
             <img
-              src={ctaImage}
+              src={frame}
               alt="CTA Illustration"
             />
 

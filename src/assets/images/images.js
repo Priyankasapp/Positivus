@@ -29,6 +29,8 @@ import team5 from "./Avtar5.png";
 import team6 from "./Avtar6.png";
 import team7 from "./Avtar.png";
 import illustration from "./IllustratioN1.png";
+import frame from "./Frame.png";
+
 
 export {
   logo,
@@ -54,5 +56,6 @@ export {
   team6,
   logo2,
   team7,
-  illustration
+  illustration,
+  frame
 };
