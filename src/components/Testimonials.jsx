@@ -1,7 +1,33 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../App.css";
+import ScrollReveal from "scrollreveal";
 
 const Testimonials = () => {
+
+  useEffect(() => {
+
+    ScrollReveal().reveal(".services-heading", {
+      origin: "top",
+      distance: "80px",
+      duration: 1000,
+      delay: 200,
+    });
+
+    ScrollReveal().reveal(".testimonial-card", {
+      origin: "top",
+      distance: "80px",
+      duration: 1000,
+      interval: 200,
+    });
+
+    ScrollReveal().reveal(".testimonial-navigation", {
+      origin: "top",
+      distance: "60px",
+      duration: 1000,
+      delay: 300,
+    });
+
+  }, []);
 
   const testimonials = [
     {
@@ -80,9 +106,12 @@ const Testimonials = () => {
           {/* NAVIGATION */}
           <div className="testimonial-navigation">
 
-             <button aria-label="Go to previous section">
-  <i className="bi bi-arrow-left" aria-hidden="true"></i>
-</button>
+            <button aria-label="Go to previous section">
+              <i
+                className="bi bi-arrow-left"
+                aria-hidden="true"
+              ></i>
+            </button>
 
             <div className="dots">
 
@@ -95,14 +124,18 @@ const Testimonials = () => {
             </div>
 
             <button aria-label="Go to next section">
-  <i className="bi bi-arrow-right" aria-hidden="true"></i>
-</button>
+              <i
+                className="bi bi-arrow-right"
+                aria-hidden="true"
+              ></i>
+            </button>
 
           </div>
 
         </div>
 
       </div>
+
     </section>
   );
 };

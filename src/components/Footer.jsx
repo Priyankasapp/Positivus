@@ -1,11 +1,59 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../App.css";
+import ScrollReveal from "scrollreveal";
 
 import { logo2 } from "../assets/images/images";
 
 const Footer = () => {
+
+  useEffect(() => {
+
+    ScrollReveal().reveal(".footer-logo", {
+      origin: "top",
+      distance: "80px",
+      duration: 1000,
+      delay: 200,
+    });
+
+    ScrollReveal().reveal(".footer-links li", {
+      origin: "top",
+      distance: "60px",
+      duration: 1000,
+      interval: 150,
+    });
+
+    ScrollReveal().reveal(".footer-social button", {
+      origin: "top",
+      distance: "50px",
+      duration: 1000,
+      interval: 150,
+    });
+
+    ScrollReveal().reveal(".footer-contact", {
+      origin: "top",
+      distance: "80px",
+      duration: 1000,
+      delay: 300,
+    });
+
+    ScrollReveal().reveal(".footer-subscribe", {
+      origin: "top",
+      distance: "80px",
+      duration: 1000,
+      delay: 400,
+    });
+
+    ScrollReveal().reveal(".footer-bottom", {
+      origin: "top",
+      distance: "60px",
+      duration: 1000,
+      delay: 500,
+    });
+
+  }, []);
+
   return (
-    <footer className="footer-section" >
+    <footer className="footer-section">
 
       <div className="container">
 
@@ -15,46 +63,53 @@ const Footer = () => {
           <div className="footer-top">
 
             {/* LOGO */}
-            <div
-              className="footer-logo"
-              
-            >
-              <img src={logo2} alt="Positivus Logo" />
+            <div className="footer-logo">
+
+              <img
+                src={logo2}
+                alt="Positivus Logo"
+              />
 
               <h2 className="footer-title">
                 Positivus
               </h2>
+
             </div>
 
             {/* NAVIGATION */}
-            <ul
-              className="footer-links"
-             
-            >
+            <ul className="footer-links">
+
               <li>About us</li>
               <li>Services</li>
               <li>Use Cases</li>
               <li>Pricing</li>
               <li>Blog</li>
+
             </ul>
 
             {/* SOCIAL */}
-            <div
-              className="footer-social"
-             
-            >
+            <div className="footer-social">
 
               <button aria-label="Visit Linkedin profile">
-                <i className="bi bi-linkedin" aria-hidden="true"></i>
+                <i
+                  className="bi bi-linkedin"
+                  aria-hidden="true"
+                ></i>
               </button>
 
               <button aria-label="Visit Facebook profile">
-                <i className="bi bi-facebook" aria-hidden="true"></i>
+                <i
+                  className="bi bi-facebook"
+                  aria-hidden="true"
+                ></i>
               </button>
 
               <button aria-label="Visit Twitter profile">
-  <i className="bi bi-twitter-x" aria-hidden="true"></i>
-</button>
+                <i
+                  className="bi bi-twitter-x"
+                  aria-hidden="true"
+                ></i>
+              </button>
 
             </div>
 
@@ -64,10 +119,7 @@ const Footer = () => {
           <div className="footer-middle">
 
             {/* CONTACT */}
-            <div
-              className="footer-contact"
-            
-            >
+            <div className="footer-contact">
 
               <h3>Contact us:</h3>
 
@@ -83,13 +135,17 @@ const Footer = () => {
             </div>
 
             {/* SUBSCRIBE */}
-            <div
-              className="footer-subscribe"
-              
-            >
-              <label htmlFor="subscribeEmail" className="visually-hidden">Email Address</label>
+            <div className="footer-subscribe">
+
+              <label
+                htmlFor="subscribeEmail"
+                className="visually-hidden"
+              >
+                Email Address
+              </label>
+
               <input
-              id="subscribeEmail"
+                id="subscribeEmail"
                 type="email"
                 placeholder="Email"
               />
@@ -105,10 +161,7 @@ const Footer = () => {
           <hr />
 
           {/* BOTTOM */}
-          <div
-            className="footer-bottom"
-        
-          >
+          <div className="footer-bottom">
 
             <p>
               © 2026 Positivus. All Rights Reserved.
@@ -123,6 +176,7 @@ const Footer = () => {
         </div>
 
       </div>
+
     </footer>
   );
 };

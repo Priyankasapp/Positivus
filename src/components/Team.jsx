@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
+
 import {
   team1,
   team2,
@@ -10,6 +12,32 @@ import {
 } from "../assets/images/images";
 
 const Team = () => {
+
+  useEffect(() => {
+
+    ScrollReveal().reveal(".services-heading", {
+      origin: "top",
+      distance: "80px",
+      duration: 1000,
+      delay: 200,
+    });
+
+    ScrollReveal().reveal(".team-card", {
+      origin: "top",
+      distance: "80px",
+      duration: 1000,
+      interval: 200,
+    });
+
+    ScrollReveal().reveal(".team-btn", {
+      origin: "top",
+      distance: "60px",
+      duration: 1000,
+      delay: 300,
+    });
+
+  }, []);
+
   const members = [
     {
       image: team1,
@@ -45,6 +73,7 @@ const Team = () => {
       role: "Social Media Specialist",
       text: "Creates engaging social campaigns and strategies.",
     },
+
     {
       image: team3,
       name: "Brian Williams",
@@ -55,71 +84,106 @@ const Team = () => {
 
   return (
     <section className="team-section">
+
       <div className="container">
+
         {/* HEADING */}
         <div className="services-heading">
+
           <h2>Team</h2>
 
           <p>
-            Meet the skilled and experienced team behind our successful digital
-            marketing strategies.
+            Meet the skilled and experienced team behind our successful
+            digital marketing strategies.
           </p>
+
         </div>
 
         {/* TEAM GRID */}
         <div className="row g-4">
+
           {members.map((member, index) => (
+
             <div className="col-lg-4 col-md-6" key={index}>
+
               <div className="team-card">
+
                 {/* TOP */}
                 <div className="team-top">
+
                   <div className="team-profile">
-                    {/* FLOWER BACKGROUND BEHIND IMAGE */}
+
+                    {/* FLOWER BACKGROUND */}
                     <div className="flower-wrapper">
+
                       <div className="flower">
-                        {/* <div className="petal petal1"></div> */}
+
                         <div className="petal petal2"></div>
-                        {/* <div className="petal petal3"></div> */}
                         <div className="petal petal4"></div>
-                        {/* <div className="petal petal5"></div> */}
                         <div className="petal petal6"></div>
-                        {/* <div className="petal petal7"></div> */}
                         <div className="petal petal8"></div>
+
                         <div className="center"></div>
+
                       </div>
+
                       <img
                         src={member.image}
-                        alt=""
+                        alt={member.name}
                         className="team-img"
                       />
+
                     </div>
 
                     <div>
-                    <h3>{member.name}</h3>
+
+                      <h3>{member.name}</h3>
+
                       <p>{member.role}</p>
+
                     </div>
+
                   </div>
 
-                  <button aria-label={`Visit ${member.name}'s LinkedIn profile`}>
-                    <i className="bi bi-linkedin" aria-hidden="true"></i>
+                  <button
+                    aria-label={`Visit ${member.name}'s LinkedIn profile`}
+                  >
+                    <i
+                      className="bi bi-linkedin"
+                      aria-hidden="true"
+                    ></i>
                   </button>
+
                 </div>
 
                 <hr />
 
                 {/* TEXT */}
-                <p className="team-text">{member.text}</p>
+                <p className="team-text">
+                  {member.text}
+                </p>
+
               </div>
+
             </div>
+
           ))}
+
         </div>
 
         {/* BUTTON */}
         <div className="team-btn-wrapper">
-          <button className="team-btn">See all team</button>
+
+          <button className="team-btn">
+            See all team
+          </button>
+
         </div>
+
       </div>
+
     </section>
   );
 };
+
 export default Team;
