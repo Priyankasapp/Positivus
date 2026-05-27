@@ -1,7 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../App.css";
+import ScrollReveal from "scrollreveal";
 
 const CaseStudies = () => {
+
+  useEffect(() => {
+
+    ScrollReveal().reveal(".services-heading", {
+      origin: "top",
+      distance: "80px",
+      duration: 1000,
+      delay: 200,
+    });
+
+    ScrollReveal().reveal(".case-item", {
+      origin: "top",
+      distance: "80px",
+      duration: 1000,
+      interval: 200,
+    });
+
+  }, []);
+
   return (
     <section className="case-section">
 
@@ -73,6 +93,7 @@ const CaseStudies = () => {
         </div>
 
       </div>
+
     </section>
   );
 };
