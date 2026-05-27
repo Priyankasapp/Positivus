@@ -63,7 +63,7 @@ const Testimonials = () => {
                   {/* USER */}
                   <div className="testimonial-user">
 
-                    <h4>{item.name}</h4>
+                    <h3>{item.name}</h3>
 
                     <span>{item.role}</span>
 
@@ -80,9 +80,9 @@ const Testimonials = () => {
           {/* NAVIGATION */}
           <div className="testimonial-navigation">
 
-            <button>
-              <i className="bi bi-arrow-left"></i>
-            </button>
+             <button aria-label="Go to previous section">
+  <i className="bi bi-arrow-left" aria-hidden="true"></i>
+</button>
 
             <div className="dots">
 
@@ -94,9 +94,9 @@ const Testimonials = () => {
 
             </div>
 
-            <button>
-              <i className="bi bi-arrow-right"></i>
-            </button>
+            <button aria-label="Go to next section">
+  <i className="bi bi-arrow-right" aria-hidden="true"></i>
+</button>
 
           </div>
 

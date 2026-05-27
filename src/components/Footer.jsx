@@ -47,17 +47,17 @@ const Footer = () => {
               data-aos-delay="300"
             >
 
-              <button>
-                <i className="bi bi-linkedin"></i>
+              <button aria-label="Visit Linkedin profile">
+                <i className="bi bi-linkedin" aria-hidden="true"></i>
               </button>
 
-              <button>
-                <i className="bi bi-facebook"></i>
+              <button aria-label="Visit Facebook profile">
+                <i className="bi bi-facebook" aria-hidden="true"></i>
               </button>
 
-              <button>
-                <i className="bi bi-twitter-x"></i>
-              </button>
+              <button aria-label="Visit Twitter profile">
+  <i className="bi bi-twitter-x" aria-hidden="true"></i>
+</button>
 
             </div>
 
@@ -73,7 +73,7 @@ const Footer = () => {
               data-aos-delay="400"
             >
 
-              <h4>Contact us:</h4>
+              <h3>Contact us:</h3>
 
               <p>Email: info@positivus.com</p>
 
@@ -92,8 +92,9 @@ const Footer = () => {
               data-aos="fade-left"
               data-aos-delay="500"
             >
-
+              <label htmlFor="subscribeEmail" className="visually-hidden">Email Address</label>
               <input
+              id="subscribeEmail"
                 type="email"
                 placeholder="Email"
               />

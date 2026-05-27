@@ -1,9 +1,15 @@
-import React from 'react'
-import {team1, team2, team3, team4,team5, team6, team7} from "../assets/images/images"
-
+import React from "react";
+import {
+  team1,
+  team2,
+  team3,
+  team4,
+  team5,
+  team6,
+  team7,
+} from "../assets/images/images";
 
 const Team = () => {
-
   const members = [
     {
       image: team1,
@@ -45,95 +51,75 @@ const Team = () => {
       role: "Social Media Specialist",
       text: "Creates engaging social campaigns and strategies.",
     },
-
-   
   ];
 
   return (
     <section className="team-section">
-
       <div className="container">
-
         {/* HEADING */}
         <div className="services-heading">
-
           <h2>Team</h2>
 
           <p>
-            Meet the skilled and experienced team behind our successful
-            digital marketing strategies.
+            Meet the skilled and experienced team behind our successful digital
+            marketing strategies.
           </p>
-
         </div>
 
         {/* TEAM GRID */}
         <div className="row g-4">
-
           {members.map((member, index) => (
-
             <div className="col-lg-4 col-md-6" key={index}>
-
               <div className="team-card">
-
                 {/* TOP */}
                 <div className="team-top">
-
                   <div className="team-profile">
-                  {/* FLOWER BACKGROUND BEHIND IMAGE */}
-<div className="flower-wrapper">
-  <div className="flower">
-    {/* <div className="petal petal1"></div> */}
-    <div className="petal petal2"></div>
-    {/* <div className="petal petal3"></div> */}
-    <div className="petal petal4"></div>
-    {/* <div className="petal petal5"></div> */}
-    <div className="petal petal6"></div>
-    {/* <div className="petal petal7"></div> */}
-    <div className="petal petal8"></div>
-    <div className="center"></div>
-  </div>
-  <img src={member.image} alt={member.name} className="team-img" />
-</div>
-
-                    <div>
-                      <h4>{member.name}</h4>
-                      <p>{member.role}</p>
+                    {/* FLOWER BACKGROUND BEHIND IMAGE */}
+                    <div className="flower-wrapper">
+                      <div className="flower">
+                        {/* <div className="petal petal1"></div> */}
+                        <div className="petal petal2"></div>
+                        {/* <div className="petal petal3"></div> */}
+                        <div className="petal petal4"></div>
+                        {/* <div className="petal petal5"></div> */}
+                        <div className="petal petal6"></div>
+                        {/* <div className="petal petal7"></div> */}
+                        <div className="petal petal8"></div>
+                        <div className="center"></div>
+                      </div>
+                      <img
+                        src={member.image}
+                        alt=""
+                        className="team-img"
+                      />
                     </div>
 
+                    <div>
+                    <h3>{member.name}</h3>
+                      <p>{member.role}</p>
+                    </div>
                   </div>
 
-                  <button className="linkedin-btn">
-                    <i className="bi bi-linkedin"></i>
+                  <button aria-label={`Visit ${member.name}'s LinkedIn profile`}>
+                    <i className="bi bi-linkedin" aria-hidden="true"></i>
                   </button>
-
                 </div>
 
                 <hr />
 
                 {/* TEXT */}
-                <p className="team-text">
-                  {member.text}
-                </p>
-
+                <p className="team-text">{member.text}</p>
               </div>
-
             </div>
-
           ))}
-
         </div>
 
         {/* BUTTON */}
         <div className="team-btn-wrapper">
-
-          <button className="team-btn">
-            See all team
-          </button>
-
+          <button className="team-btn">See all team</button>
         </div>
-
       </div>
     </section>
   );
 };
-export default Team
+export default Team;
