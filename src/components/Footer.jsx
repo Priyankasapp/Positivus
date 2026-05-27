@@ -5,7 +5,7 @@ import { logo2 } from "../assets/images/images";
 
 const Footer = () => {
   return (
-    <footer className="footer-section" data-aos="fade-up">
+    <footer className="footer-section" >
 
       <div className="container">
 
@@ -17,8 +17,7 @@ const Footer = () => {
             {/* LOGO */}
             <div
               className="footer-logo"
-              data-aos="zoom-in"
-              data-aos-delay="100"
+              
             >
               <img src={logo2} alt="Positivus Logo" />
 
@@ -30,8 +29,7 @@ const Footer = () => {
             {/* NAVIGATION */}
             <ul
               className="footer-links"
-              data-aos="fade-up"
-              data-aos-delay="200"
+             
             >
               <li>About us</li>
               <li>Services</li>
@@ -43,8 +41,7 @@ const Footer = () => {
             {/* SOCIAL */}
             <div
               className="footer-social"
-              data-aos="fade-left"
-              data-aos-delay="300"
+             
             >
 
               <button aria-label="Visit Linkedin profile">
@@ -69,8 +66,7 @@ const Footer = () => {
             {/* CONTACT */}
             <div
               className="footer-contact"
-              data-aos="fade-right"
-              data-aos-delay="400"
+            
             >
 
               <h3>Contact us:</h3>
@@ -89,8 +85,7 @@ const Footer = () => {
             {/* SUBSCRIBE */}
             <div
               className="footer-subscribe"
-              data-aos="fade-left"
-              data-aos-delay="500"
+              
             >
               <label htmlFor="subscribeEmail" className="visually-hidden">Email Address</label>
               <input
@@ -107,13 +102,12 @@ const Footer = () => {
 
           </div>
 
-          <hr data-aos="zoom-in" data-aos-delay="600" />
+          <hr />
 
           {/* BOTTOM */}
           <div
             className="footer-bottom"
-            data-aos="fade-up"
-            data-aos-delay="700"
+        
           >
 
             <p>
