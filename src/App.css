@@ -444,7 +444,9 @@
 }
 
 .testimonial-card {
-  color: white;/* =========================
+  color: white;
+}
+  /* =========================
    BRANDS SLIDER
 ========================= */
 
@@ -483,7 +485,7 @@
     transform: translateX(-50%);
   }
 }
-}
+
 
 .testimonial-message {
   border: 1px solid #b9ff66;
