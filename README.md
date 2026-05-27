@@ -1,16 +1,90 @@
-# React + Vite
+# Positivus - Digital Marketing Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive digital marketing website built with React.js and Bootstrap.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Fully Responsive Design
+- Modern UI/UX
+- React Component Architecture
+- Bootstrap 5 Layout
+- GSAP Animations
+- AOS Scroll Animations
+- Accessible Components
+- Clean Folder Structure
 
-## React Compiler
+## 🛠️ Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React.js
+- Bootstrap 5
+- CSS3
+- React Router DOM
+- Bootstrap Icons
 
-## Expanding the ESLint configuration
+## 📂 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+src/
+│
+├── assets/
+│   ├── images/
+│
+├── components/
+│   ├── Navbar.jsx
+│   ├── Hero.jsx
+│   ├── Services.jsx
+│   ├── Team.jsx
+│   ├── Contact.jsx
+│   ├── Footer.jsx
+│
+├── App.jsx
+├── main.jsx
+```
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/positivus-react.git
+```
+
+Navigate to project folder:
+
+```bash
+cd positivus-react
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start development server:
+
+```bash
+npm run dev
+```
+
+
+
+## 🌐 Live Demo
+
+Add your deployed project link here.
+
+## ♿ Accessibility Improvements
+
+- Proper heading hierarchy
+- Accessible form labels
+- Fieldset and legend for radio groups
+- Decorative images hidden from screen readers
+- Improved aria-label support
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+---
+
+Made in India..
