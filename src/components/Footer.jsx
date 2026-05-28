@@ -9,42 +9,42 @@ const Footer = () => {
   useEffect(() => {
 
     ScrollReveal().reveal(".footer-logo", {
-      origin: "top",
+      origin: "bottom",
       distance: "80px",
       duration: 1000,
       delay: 200,
     });
 
     ScrollReveal().reveal(".footer-links li", {
-      origin: "top",
+      origin: "bottom",
       distance: "60px",
       duration: 1000,
       interval: 150,
     });
 
     ScrollReveal().reveal(".footer-social button", {
-      origin: "top",
+      origin: "bottom",
       distance: "50px",
       duration: 1000,
       interval: 150,
     });
 
     ScrollReveal().reveal(".footer-contact", {
-      origin: "top",
+      origin: "bottom",
       distance: "80px",
       duration: 1000,
       delay: 300,
     });
 
     ScrollReveal().reveal(".footer-subscribe", {
-      origin: "top",
+      origin: "bottom",
       distance: "80px",
       duration: 1000,
       delay: 400,
     });
 
     ScrollReveal().reveal(".footer-bottom", {
-      origin: "top",
+      origin: "bottom",
       distance: "60px",
       duration: 1000,
       delay: 500,

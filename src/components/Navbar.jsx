@@ -10,7 +10,7 @@ function Navbar() {
   useEffect(() => {
 
     ScrollReveal().reveal(".navbar", {
-      origin: "top",
+      origin: "bottom",
       distance: "80px",
       duration: 1000,
       delay: 200,
@@ -18,7 +18,7 @@ function Navbar() {
     });
 
     ScrollReveal().reveal(".nav-item", {
-      origin: "top",
+      origin: "bottom",
       distance: "50px",
       duration: 1000,
       interval: 150,

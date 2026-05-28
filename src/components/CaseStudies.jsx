@@ -7,14 +7,14 @@ const CaseStudies = () => {
   useEffect(() => {
 
     ScrollReveal().reveal(".services-heading", {
-      origin: "top",
+      origin: "bottom",
       distance: "80px",
       duration: 1000,
       delay: 200,
     });
 
     ScrollReveal().reveal(".case-item", {
-      origin: "top",
+      origin: "bottom",
       distance: "80px",
       duration: 1000,
       interval: 200,

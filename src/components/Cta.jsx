@@ -9,14 +9,14 @@ const Cta = () => {
   useEffect(() => {
 
     ScrollReveal().reveal(".cta-content", {
-      origin: "top",
+      origin: "bottom",
       distance: "80px",
       duration: 1000,
       delay: 200,
     });
 
     ScrollReveal().reveal(".cta-image", {
-      origin: "top",
+      origin: "bottom",
       distance: "100px",
       duration: 1200,
       delay: 400,

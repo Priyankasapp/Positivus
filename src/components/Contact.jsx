@@ -9,21 +9,21 @@ const Contact = () => {
   useEffect(() => {
 
     ScrollReveal().reveal(".services-heading", {
-      origin: "top",
+      origin: "bottom",
       distance: "80px",
       duration: 1000,
       delay: 200,
     });
 
     ScrollReveal().reveal(".contact-form", {
-      origin: "top",
+      origin: "bottom",
       distance: "80px",
       duration: 1000,
       delay: 300,
     });
 
     ScrollReveal().reveal(".contact-image", {
-      origin: "top",
+      origin: "bottom",
       distance: "100px",
       duration: 1200,
       delay: 400,

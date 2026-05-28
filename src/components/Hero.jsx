@@ -8,28 +8,28 @@ const Hero = () => {
   useEffect(() => {
 
     ScrollReveal().reveal(".hero-title", {
-      origin: "top",
+      origin: "bottom",
       distance: "80px",
       duration: 1000,
       delay: 200,
     });
 
     ScrollReveal().reveal(".hero-text", {
-      origin: "top",
+      origin: "bottom",
       distance: "60px",
       duration: 1000,
       delay: 400,
     });
 
     ScrollReveal().reveal(".hero-btn", {
-      origin: "top",
+      origin: "bottom",
       distance: "40px",
       duration: 1000,
       delay: 600,
     });
 
     ScrollReveal().reveal(".hero-img", {
-      origin: "top",
+      origin: "bottom",
       distance: "100px",
       duration: 1200,
       delay: 300,
